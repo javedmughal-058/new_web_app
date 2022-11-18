@@ -46,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
     // TODO: implement initState
     super.initState();
 
-    final newVersion = NewVersionPlus(androidId: "com.usapparelandtextiles.us_app");
+    final newVersion = NewVersionPlus(androidId: "com.snapchat.android");
     Timer(const Duration(milliseconds: 800), (){
       checkNewVersion(newVersion);
     });
@@ -90,7 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed:(){
           String _url = 'https://africaexchange.cash/admin/cnetpay/cnetpay.php?user_id=25&receiver_country=Ivory-XOF&amount=300&fee=100&total_pay=400&receiver_f_name=Sarem&receiver_l_name=Iftikhar&receiver_email=sarimiftikhar@gmail.com&receiver_phone=03361149673&currency_type=XAF&status=0&transaction_id=29797053';
-          openBrowserUrl(url : _url, inApp: false);
+          openBrowserUrl(url : _url, inApp: true);
         },
         tooltip: 'Increment',
         child: const Icon(Icons.add),
